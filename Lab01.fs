@@ -88,8 +88,29 @@ let rec sumOfDigits number = if number < 10 then number % 10
                              else number % 10 + sumOfDigits(number/10)
 printfn "Suma cyfr %i wynosi %i" number (sumOfDigits number)
 
+//==== Zad 3 a) ====
+let x = 5
+let y = 15
+let rec displayNumbers x y = if x = y then printfn "%i" x  
+                             else printfn "%i" x; displayNumbers (x+1) y
+displayNumbers x y
+
+//==== Zad 3 b) ====
+let string = "napis"
+let i = 5
+let rec displayNthConc string i = if i = 1 then printfn "%s" string
+                                  else displayNthConc (string+string) (i-1)
+displayNthConc string i
+
+//==== Zad 3 c) ====
+let an = 10
+let j = 11
+let rec nElementsOfAritProgression an j = if j = 1 then printfn "%i " an
+                                          else printf "%i " an; nElementsOfAritProgression (an+3) (j-1)
+nElementsOfAritProgression an j
+
 [<EntryPoint>]
-let main argv =
+let main argv = 0
  
-   
-    0 // return an integer exit code
+
+     
