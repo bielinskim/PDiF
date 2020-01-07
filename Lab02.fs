@@ -26,3 +26,20 @@ let rec findMinMax min max list02 =
 
    
 findMinMax 0 0 list02
+
+let list03 = 25::14::4::7::[]
+
+let rec removeAboveAverage total i list03 = 
+  match list03 with
+   | [] -> total / i
+   | x::xs -> 
+      let ntotal = x + total
+      removeAboveAverage ntotal (i+1) xs;
+  match list03 with
+   | [] -> printfn "test1", 5
+   | x::xs -> printfn "test2", 5
+
+  
+
+             
+removeAboveAverage 0 0 list03
