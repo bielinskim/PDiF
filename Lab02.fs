@@ -7,8 +7,7 @@ let rec aritMean total i list =
   match list with
   | [] -> total / i
   | x::xs -> 
-     let ntotal = x + total
-     aritMean ntotal (i+1) xs
+     aritMean (x + total) (i + 1) xs
              
 aritMean 0 0 list
 
@@ -27,19 +26,26 @@ let rec findMinMax min max list02 =
    
 findMinMax 0 0 list02
 
+
+//==== Zad 03 ====
+
 let list03 = 25::14::4::7::[]
 
-let rec removeAboveAverage total i list03 = 
+let rec removeAboveAverage total i list03 list04 = 
   match list03 with
-   | [] -> total / i
-   | x::xs -> 
-      let ntotal = x + total
-      removeAboveAverage ntotal (i+1) xs;
-  match list03 with
-   | [] -> printfn "test1", 5
-   | x::xs -> printfn "test2", 5
+  | [] -> 
+     let total = total / i
+     let rec removeAbove total list04 =
+       match list04 with
+       | [] -> []
+       | x::xs -> 
+            let list03 = removeAbove total xs
+            if x>total then list03 else x::list03
+     removeAbove total list04
+  | x::xs -> 
+      removeAboveAverage (x + total) (i + 1) xs list04
 
   
+removeAboveAverage 0 1 list03 list03
 
-             
-removeAboveAverage 0 0 list03
+
