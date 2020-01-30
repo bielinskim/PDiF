@@ -109,6 +109,14 @@ zawod(filip,rolnik).
 zawod(natalia,ksiegowa).
 zawod(hanna,nauczyciel).
 
+uczen(wojciech).
+
+lubi(wedkarstwo, aleksander).
+lubi(szydelkowanie, amelia).
+lubi(czytac_gazete, jan).
+lubi(ogladac_tv, mikolaj).
+lubi(czytac_ksiazki, natalia).
+lubi(gry_komputerowe, wojciech).
 
 
 matka(X,Y) :-
@@ -168,3 +176,25 @@ syn(Y, X) :-
 corka(Y,X) :-
     rodzic(Y,X),
     kobieta(X).
+
+zylwczasie(wojny, X) :-
+    urodzony(X, Y),
+    Y<1945,
+    zmarl(X, Z),
+    Z>1939.
+
+zylwczasie(wojny, X) :-
+    urodzony(X, Y),
+    Y<1945,
+    zyje(X).
+
+zylwczasie(socjalizmu, X) :-
+    urodzony(X, Y),
+    Y<1989,
+    zmarl(X,Z),
+    Z>1945.
+
+zylwczasie(socjalizmu, X) :-
+    urodzony(X, Y),
+    Y<1989,
+    zyje(X).
