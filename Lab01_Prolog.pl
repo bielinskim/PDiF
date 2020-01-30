@@ -11,7 +11,7 @@ rodzic(lena,jan).
 rodzic(jakub,amelia).
 rodzic(julia,amelia).
 
-%Dziadkowie, rodzice i ich rodzeñstwo
+%Dziadkowie, rodzice i ich rodzeÅ„stwo
 rodzic(aleksander,mikolaj).
 rodzic(alicja,mikolaj).
 rodzic(aleksander,filip).
@@ -22,7 +22,7 @@ rodzic(amelia,natalia).
 rodzic(jan,hanna).
 rodzic(amelia,hanna).
 
-%Rodzice i rodzeñstwo
+%Rodzice i rodzeÅ„stwo
 rodzic(mikolaj,wojciech).
 rodzic(natalia,wojciech).
 
