@@ -1,8 +1,8 @@
 pisac:-
-   write('Autor programu Mateusz Bieliñski'),nl,
-   write('Czasownik "pisaæ"'),nl,
+   write('Autor programu Mateusz BieliÅ„ski'),nl,
+   write('Czasownik "pisaÄ‡"'),nl,
    write('Wpisz w dowolnym momencie "end" aby zakonczyc'),nl,
-   write('Witaj. Jak masz na imiê?'),nl,
+   write('Witaj. Jak masz na imiÄ™?'),nl,
    read(Imie),
    czy_piszesz(Imie).
 
@@ -87,29 +87,29 @@ notatki(_,Imie) :- niepoprawna,read(Notatki),notatki(Notatki,Imie).
 
 
 wniosek1(Imie,Oczym):- write(Imie),
-    write(' jest autorem ksiazek. Pisze ksiazkê historyczna o '),
+    write(' jest autorem ksiazek. Pisze ksiazkÄ™ historyczna o '),
     write(Oczym),
     koniec.
 wniosek2(Imie,Oczym):- write(Imie),
-    write(' jest autorem ksiazek. Pisze ksiazkê fantasy o '),
+    write(' jest autorem ksiazek. Pisze ksiazkÄ™ fantasy o '),
     write(Oczym),
     koniec.
 wniosek3(Imie,Oczym):- write(Imie),
-    write(' jest autorem ksiazek. Pisze ksiazkê podró¿nicz¹ o '),
+    write(' jest autorem ksiazek. Pisze ksiazkÄ™ podrÃ³Å¼niczÄ… o '),
     write(Oczym),
     koniec.
 
 
 wniosek4(Imie,Doczego):- write(Imie),
-    write(' jest programist¹. Pisze aplikacjê mobiln¹ do '),
+    write(' jest programistÄ…. Pisze aplikacjÄ™ mobilnÄ… do '),
     write(Doczego),
     koniec.
 wniosek5(Imie,Doczego):- write(Imie),
-    write(' jest programist¹. Pisze aplikacjê webow¹ do '),
+    write(' jest programistÄ…. Pisze aplikacjÄ™ webowÄ… do '),
     write(Doczego),
     koniec.
 wniosek6(Imie,Doczego):- write(Imie),
-    write(' jest programist¹. Pisze aplikacjê desktopow¹ do '),
+    write(' jest programistÄ…. Pisze aplikacjÄ™ desktopowÄ… do '),
     write(Doczego),
     koniec.
 
@@ -129,20 +129,20 @@ wniosek9(Imie,Najakitemat):- write(Imie),
 
 
 wniosek10(Imie,Oczym):- write(Imie),
-    write(' pisze wiadomoœci do mamy. Rozmawiaj¹ o '),
+    write(' pisze wiadomoÅ›ci do mamy. RozmawiajÄ… o '),
     write(Oczym),
     koniec.
 wniosek11(Imie,Oczym):- write(Imie),
-    write(' pisze wiadomoœci do dziewczyny. Rozmawiaj¹ o '),
+    write(' pisze wiadomoÅ›ci do dziewczyny. RozmawiajÄ… o '),
     write(Oczym),
     koniec.
 wniosek12(Imie,Oczym):- write(Imie),
-    write(' pisze wiadomoœci do kolegi. Rozmawiaj¹ o '),
+    write(' pisze wiadomoÅ›ci do kolegi. RozmawiajÄ… o '),
     write(Oczym),
     koniec.
 
 wniosek13(Imie,Oczym):- write(Imie),
-    write(' zapisuje notatki z wyk³adu o '),
+    write(' zapisuje notatki z wykÅ‚adu o '),
     write(Oczym),
     koniec.
 wniosek14(Imie,Oczym):- write(Imie),
